@@ -48,10 +48,10 @@ public class StatsService {
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < averageAmount)
                 numberMonth++;
-            }
-            return numberMonth;
-
         }
+        return numberMonth;
+
+    }
 
     public int numberMonthsSalesAboveAverage(int[] sales) {  //количество месяцев, в которых продажи были выше среднего
         int averageAmount = averageSalesAmount(sales);
